@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const Home = () => {
-    const [adress, setAdress] = useState('Ul');
+    const [adress, setAdress] = useState(null);
 
     const API_KAY = "d4683b09d0c94ec0aebf0b2e043decbf"
     useEffect(() => {
@@ -17,7 +17,6 @@ export const Home = () => {
         }
 
         function error(err) {
-            setAdress('UL')
             console.warn(`ERROR(${err.code}): ${err.message}`);
         }
 
