@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export const Home = () => {
     const [adress, setAdress] = useState(null);
-    const [exchange, setExchange] = useState(0)
 
     const API_KAY = "d4683b09d0c94ec0aebf0b2e043decbf"
     useEffect(() => {
